@@ -1,0 +1,10 @@
+{
+  "name": "multi-class",
+  "version": "1.0.0",
+  "description": "Easy multiple inheritance and composition in JavaScript.",
+  "main": "index.js",
+  "repository": "https://github.com/kbravh/multi-class.git",
+  "author": "Karey Higuera <karey.higuera@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
