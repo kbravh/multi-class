@@ -7,6 +7,12 @@
   "author": "Karey Higuera <karey.higuera@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "multiple",
+    "classes",
+    "inheritance",
+    "composition"
+  ],
   "scripts": {
     "test": "node test.js"
   },
