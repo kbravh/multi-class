@@ -1,6 +1,6 @@
 {
   "name": "@kbravh/multi-class",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy multiple inheritance and composition in JavaScript.",
   "main": "index.js",
   "repository": "https://github.com/kbravh/multi-class.git",
