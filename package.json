@@ -1,5 +1,5 @@
 {
-  "name": "multi-class",
+  "name": "@kbravh/multi-class",
   "version": "1.0.0",
   "description": "Easy multiple inheritance and composition in JavaScript.",
   "main": "index.js",
