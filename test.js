@@ -15,7 +15,7 @@ class HasName {
     this.name = name
   }
 
-  getName(){return this.name}v
+  getName(){return this.name}
 }
 
 class Person extends multiclass(HasAge, HasName) {
