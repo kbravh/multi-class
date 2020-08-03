@@ -3,7 +3,7 @@
  * all properties of the various parents to be extended.
  * @param  {...any} classes - All the classes you wish to extend
  */
-const multiClass = (...classes) => {
+const multiclass = (...classes) => {
   /**
    * Class frame to hold all parent properties.
    */
@@ -29,4 +29,4 @@ const multiClass = (...classes) => {
   return Class
 }
 
-module.exports = multiClass
+module.exports = multiclass
