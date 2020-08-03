@@ -6,5 +6,11 @@
   "repository": "https://github.com/kbravh/multi-class.git",
   "author": "Karey Higuera <karey.higuera@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "baretest": "^2.0.0"
+  }
 }
