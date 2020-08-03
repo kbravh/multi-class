@@ -112,7 +112,7 @@ person.getNameAndAge() // Leeloo is 22 years old.
 
 ### Options
 
-Don't like the name `multi-class`? Just change the name on import and code to your heart's content.
+Don't like the name `multiclass`? Just change the name on import and inherit to your heart's content.
 
 ``` JS
 const 🤖 = require('multi-class')
