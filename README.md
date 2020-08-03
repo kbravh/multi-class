@@ -70,7 +70,7 @@ yarn add @kbravh/multi-class
 Import the library, then create a couple of parent classes. A common pattern uses "Has" or "With".
 
 ``` JS
-const multiclass = require('multi-class')
+const multiclass = require('@kbravh/multi-class')
 
 class HasName {
   constructor({name}){
@@ -115,7 +115,7 @@ person.getNameAndAge() // Leeloo is 22 years old.
 Don't like the name `multiclass`? Just change the name on import and inherit to your heart's content.
 
 ``` JS
-const 🤖 = require('multi-class')
+const 🤖 = require('@kbravh/multi-class')
 
 class Person extends 🤖(HasName, HasAge){...}
 ```
