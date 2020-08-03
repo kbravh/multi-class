@@ -57,11 +57,11 @@ This library has zero dependencies. To get up and running in your project, just 
 Install the library with
 
 ``` bash
-npm install multi-class
+npm install @kbravh/multi-class
 ```
 or
 ``` bash
-yarn add multi-class
+yarn add @kbravh/multi-class
 ```
 
 
