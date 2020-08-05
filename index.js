@@ -11,9 +11,15 @@ const multiclass = (...classes) => {
     constructor(...options){
       // Loop over all incoming classes
       for (let baseClass of classes){
-        // Grab a list of the properties attached to them; methods, variables, &c.
+        // check if this class already extends another class
+        let parent = Reflect.getPrototypeOf(baseClass)
+        // Push the parent onto the classes array if it's a class and if it isn't yet there
+        if(parent.prototype && !classes.includes(parent)){
+          classes.push(parent)
+        }
+        // Grab a list of the properties attached to the class; methods, variables, &c.
         const properties = Reflect.ownKeys(baseClass.prototype)
-
+        // loop through our properties
         for (let property of properties){
           // If it's a constructor, we'll pass it our incoming arguments
           if(property === 'constructor'){

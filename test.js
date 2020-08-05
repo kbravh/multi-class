@@ -22,19 +22,29 @@ class Person extends multiclass(HasAge, HasName) {
   getNameAndAge(){return `${this.name} is ${this.age} years old.`}
 }
 
-let person = {}
+class Element {
+  constructor({element}){
+    this.element = element
+  }
+}
+
+class FifthElement extends multiclass(Person, Element){}
+
+let leeloo = {}
 
 test.before(() => {
-  person = new Person({
+  leeloo = new FifthElement({
     name: "Leeloo",
-    age: 22
+    age: 22,
+    element: "fifth"
   })
 })
 
 test('Test multi-class inheritance', () => {
-  assert.strictEqual(person.getName(), "Leeloo")
-  assert.strictEqual(person.getAge(), 22)
-  assert.strictEqual(person.getNameAndAge(), "Leeloo is 22 years old.")
+  assert.strictEqual(leeloo.getName(), "Leeloo")
+  assert.strictEqual(leeloo.getAge(), 22)
+  assert.strictEqual(leeloo.getNameAndAge(), "Leeloo is 22 years old.")
+  assert.strictEqual(leeloo.element, "fifth")
 })
 
 test.run()
