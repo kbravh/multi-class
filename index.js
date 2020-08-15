@@ -24,6 +24,12 @@ const multiclass = (...classes) => {
           // If it's a constructor, we'll pass it our incoming arguments
           if(property === 'constructor'){
             Object.assign(Class.prototype, new baseClass.prototype.constructor(...options))
+            // look for static methods or variables on the class
+            let staticProperties = Reflect.ownKeys(baseClass.prototype.constructor).filter(property => !["length", "prototype", "name"].includes(property))
+            // attach these static properties to the class frame
+            for (let staticProperty of staticProperties){
+              Class[staticProperty] = baseClass[staticProperty]
+            }
           } else { // otherwise, we'll just attach it to our Class frame
             Class.prototype[property] = baseClass.prototype[property]
           }
