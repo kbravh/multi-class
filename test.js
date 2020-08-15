@@ -26,6 +26,15 @@ class Element {
   constructor({element}){
     this.element = element
   }
+  static isElement(element){
+    return [
+      "earth",
+      "fire",
+      "water",
+      "air",
+      "leeloo"
+    ].includes(element)
+  }
 }
 
 class FifthElement extends multiclass(Person, Element){}
@@ -45,6 +54,9 @@ test('Test multi-class inheritance', () => {
   assert.strictEqual(leeloo.getAge(), 22)
   assert.strictEqual(leeloo.getNameAndAge(), "Leeloo is 22 years old.")
   assert.strictEqual(leeloo.element, "fifth")
+  // static inheritance
+  assert.ok(FifthElement.isElement("air"))
+  assert.throws(() => leeloo.isElement("air"))
 })
 
 test.run()
