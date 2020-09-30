@@ -5,6 +5,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+![CircleCI][circle-ci]
 
 
 
@@ -160,3 +161,4 @@ Project Link: [https://github.com/kbravh/multi-class](https://github.com/kbravh/
 [license-url]: https://github.com/kbravh/multi-class/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kbravh
+[circle-ci]: https://img.shields.io/circleci/build/github/kbravh/multi-class/master?style=flat-square&token=7a06dc52baa780c631a04b7dd09e358fa3f6b44d
