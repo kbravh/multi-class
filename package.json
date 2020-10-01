@@ -17,6 +17,7 @@
     "test": "node test.js"
   },
   "devDependencies": {
-    "baretest": "^2.0.0"
+    "baretest": "^2.0.0",
+    "rome": "^10.0.4-beta"
   }
 }
