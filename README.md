@@ -54,7 +54,7 @@ Multi-inheritance/composition is a very useful feature of Object Oriented Progra
 This library has zero dependencies. To get up and running in your project, just go ahead and install.
 
 ### Installation
- 
+
 Install the library with
 
 ``` bash
@@ -134,10 +134,11 @@ See the [open issues](https://github.com/kbravh/multi-class/issues) for a list o
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create your Feature Branch (`git checkout -b new-feature`)
+3. Be sure to run linting! (`yarn lint`)
+4. Commit your Changes (`git commit -m 'Add something cool!'`)
+5. Push to the Branch (`git push origin new-feature`)
+6. Open a Pull Request
 
 
 
