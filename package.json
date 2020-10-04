@@ -14,9 +14,11 @@
     "composition"
   ],
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "npx rome check --apply"
   },
   "devDependencies": {
-    "baretest": "^2.0.0"
+    "baretest": "^2.0.0",
+    "rome": "^10.0.4-beta"
   }
 }

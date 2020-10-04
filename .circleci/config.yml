@@ -7,11 +7,18 @@ jobs:
           pkg-manager: yarn
       - run:
           command: yarn test
-          name: Run YARN tests
+          name: Run Yarn tests
+  lint:
+    executor: node/default
+    steps:
+      - rome/check:
+          pkg-manager: yarn
 orbs:
   node: circleci/node@4.0.1
+  rome: kbravh/rome-check@dev:alpha
 version: 2.1
 workflows:
   Test_app:
     jobs:
       - test
+      - lint
