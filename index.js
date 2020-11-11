@@ -39,7 +39,15 @@ function multiclass(...classes) {
 						}
 					} else {
 						// otherwise, we'll just attach it to our Class frame
-						Class.prototype[property] = baseClass.prototype[property];
+						let propertyDescriptor = Reflect.getOwnPropertyDescriptor(
+							baseClass.prototype,
+							property,
+						);
+						Reflect.defineProperty(
+							Class.prototype,
+							property,
+							propertyDescriptor,
+						);
 					}
 				}
 			}

@@ -4,11 +4,15 @@ const multiclass = require("./index");
 
 class HasAge {
 	constructor({age}) {
-		this.age = age;
+		this._age = age;
 	}
 
-	getAge() {
-		return this.age;
+	set age(age) {
+		this._age = age;
+	}
+
+	get age() {
+		return this._age;
 	}
 }
 
@@ -62,9 +66,12 @@ test(
 	"Test multi-class inheritance",
 	() => {
 		assert.strictEqual(leeloo.getName(), "Leeloo");
-		assert.strictEqual(leeloo.getAge(), 22);
+		assert.strictEqual(leeloo.age, 22);
 		assert.strictEqual(leeloo.getNameAndAge(), "Leeloo is 22 years old.");
 		assert.strictEqual(leeloo.element, "fifth");
+		// getters and setters
+		leeloo.age = 23;
+		assert.strictEqual(leeloo.age, 23);
 		// static inheritance
 		assert.ok(FifthElement.isElement("air"));
 		assert.throws(() => leeloo.isElement("air"));
